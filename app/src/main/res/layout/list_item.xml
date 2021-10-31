@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/oneItem"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="@dimen/_4sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/image"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_60sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_4sdp" >
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tvName"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:hint="@string/collection_name"
+                android:textSize="@dimen/_13sdp"
+                android:maxLines="1"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/tvPrice"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:hint="@string/collection_price"
+                    android:textSize="@dimen/_13sdp"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/tvDate"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:hint="@string/release_date"
+                    android:textSize="@dimen/_13sdp"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

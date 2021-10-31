@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#171F28"
+        tools:context=".view.DetailsActivity">
+
+        <ImageView
+            android:id="@+id/detailsImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/test_image"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_height="@dimen/_150sdp" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/detailsArtistName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsImage"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/artist_name"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/detailsItemName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsArtistName"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/item_name"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/detailsReleaseDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsItemName"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/price"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsReleaseDate"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/kind"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_115sdp" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/detailsArtist"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/guideLine"
+            app:layout_constraintTop_toBottomOf="@+id/detailsImage"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/detailsItem"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/guideLine"
+            app:layout_constraintTop_toBottomOf="@+id/detailsArtist"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/detailsDate"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/guideLine"
+            app:layout_constraintTop_toBottomOf="@+id/detailsItem"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/detailsDescription"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/guideLine"
+            app:layout_constraintTop_toBottomOf="@+id/detailsDate"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
